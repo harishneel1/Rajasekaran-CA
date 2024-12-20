@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R N H & CO LLP - Modern Financial Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        .custom-shape-divider {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .gradient-text {
+            background: linear-gradient(120deg, #2563eb, #4f46e5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            z-index: 0;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <!-- Header -->
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-white">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div
+                    class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+                    R N H & CO LLP
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors">Services</a>
+                    <a href="#why-us" class="text-gray-600 hover:text-blue-600 transition-colors">Why Us</a>
+                    <a href="#process" class="text-gray-600 hover:text-blue-600 transition-colors">Process</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+                <button
+                    class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all">
+                    Get Started
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 relative overflow-hidden">
+        <!-- Decorative blobs -->
+        <div class="blob bg-blue-100/50 w-96 h-96 -top-48 -right-48"></div>
+        <div class="blob bg-indigo-100/50 w-64 h-64 top-32 -left-32"></div>
+
+        <div class="container mx-auto px-6 relative">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 z-10" data-aos="fade-right">
+                    <div class="flex items-center mb-6 bg-indigo-50/50 w-fit px-4 py-2 rounded-full">
+                        <span class="text-blue-600 font-medium">4.8/5 Rating on Google</span>
+                        <div class="flex ml-2">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        Simplifying Your <span class="gradient-text">Financial Journey</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Expert chartered accountancy services with modern solutions. Your trusted partner for taxation,
+                        auditing, and compliance.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button
+                            class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full hover:shadow-lg transition-all">
+                            Schedule Free Consultation
+                        </button>
+                        <button
+                            class="border-2 border-gray-200 px-8 py-4 rounded-full hover:border-blue-600 transition-all text-gray-700 hover:text-blue-600">
+                            View Services
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-12 md:mt-0 relative z-10" data-aos="fade-left">
+                    <!-- Hero Illustration with shadow and animation -->
+                    <div class="relative transform hover:scale-105 transition-transform duration-300">
+                        <!-- Shadow effect -->
+                        <div class="absolute inset-0 bg-blue-600/5 rounded-2xl transform rotate-3"></div>
+                        <!-- SVG container with animation -->
+                        <div class="relative bg-white rounded-2xl shadow-xl overflow-hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+                                <defs>
+                                    <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
+                                        <stop offset="0%" stop-color="#F3F4FF" />
+                                        <stop offset="100%" stop-color="#EEF2FF" />
+                                    </linearGradient>
+
+                                    <style>
+                                        @keyframes dash {
+                                            to {
+                                                stroke-dashoffset: 0;
+                                            }
+                                        }
+
+                                        .dotted-line {
+                                            stroke-dasharray: 8;
+                                            stroke-dashoffset: 160;
+                                            animation: dash 3s linear infinite;
+                                        }
+
+                                        .service-text {
+                                            font-size: 12px;
+                                            fill: #4F46E5;
+                                            font-weight: 600;
+                                            dominant-baseline: middle;
+                                        }
+
+                                        .sub-text {
+                                            font-size: 11px;
+                                            fill: #6B7280;
+                                            dominant-baseline: middle;
+                                        }
+
+                                        .header-text {
+                                            font-size: 14px;
+                                            fill: #4F46E5;
+                                            font-weight: bold;
+                                            dominant-baseline: middle;
+                                        }
+
+                                        .stats-text {
+                                            font-size: 11px;
+                                            fill: #6B7280;
+                                            dominant-baseline: middle;
+                                        }
+                                    </style>
+                                </defs>
+
+                                <!-- Background -->
+                                <rect width="600" height="400" fill="url(#bgGradient)" rx="20" />
+
+                                <!-- Central Hub -->
+                                <circle cx="300" cy="200" r="65" fill="white" stroke="#4F46E5" stroke-width="2" />
+                                <text x="300" y="190" text-anchor="middle" class="header-text">R N H</text>
+                                <text x="300" y="210" text-anchor="middle" class="header-text">& CO LLP</text>
+
+                                <!-- Top Stats Cards -->
+                                <rect x="40" y="40" width="120" height="60" rx="10" fill="white" stroke="#4F46E5"
+                                    stroke-width="2" />
+                                <text x="100" y="60" text-anchor="middle" class="header-text">500+</text>
+                                <text x="100" y="80" text-anchor="middle" class="stats-text">Happy Clients</text>
+
+                                <rect x="240" y="40" width="120" height="60" rx="10" fill="white" stroke="#4F46E5"
+                                    stroke-width="2" />
+                                <text x="300" y="60" text-anchor="middle" class="header-text">Businesses</text>
+                                <text x="300" y="80" text-anchor="middle" class="stats-text">Small to Large</text>
+
+                                <rect x="440" y="40" width="120" height="60" rx="10" fill="white" stroke="#4F46E5"
+                                    stroke-width="2" />
+                                <text x="500" y="60" text-anchor="middle" class="header-text">5+ Years</text>
+                                <text x="500" y="80" text-anchor="middle" class="stats-text">Experience</text>
+
+                                <!-- Service Circles -->
+                                <circle cx="130" cy="150" r="45" fill="white" stroke="#4F46E5" stroke-width="2" />
+                                <text x="130" y="140" text-anchor="middle" class="service-text">Tax Services</text>
+                                <text x="130" y="160" text-anchor="middle" class="sub-text">Income Tax</text>
+                                <text x="130" y="175" text-anchor="middle" class="sub-text">GST Filing</text>
+
+                                <circle cx="470" cy="150" r="45" fill="white" stroke="#4F46E5" stroke-width="2" />
+                                <text x="470" y="140" text-anchor="middle" class="service-text">Auditing</text>
+                                <text x="470" y="160" text-anchor="middle" class="sub-text">Statutory</text>
+                                <text x="470" y="175" text-anchor="middle" class="sub-text">Internal</text>
+
+                                <circle cx="130" cy="300" r="45" fill="white" stroke="#4F46E5" stroke-width="2" />
+                                <text x="130" y="290" text-anchor="middle" class="service-text">Compliance</text>
+                                <text x="130" y="310" text-anchor="middle" class="sub-text">Regulatory</text>
+                                <text x="130" y="325" text-anchor="middle" class="sub-text">Returns</text>
+
+                                <circle cx="470" cy="300" r="45" fill="white" stroke="#4F46E5" stroke-width="2" />
+                                <text x="470" y="290" text-anchor="middle" class="service-text">Advisory</text>
+                                <text x="470" y="310" text-anchor="middle" class="sub-text">Business Growth</text>
+                                <text x="470" y="325" text-anchor="middle" class="sub-text">Strategy</text>
+
+                                <!-- Bottom Card -->
+                                <rect x="240" y="300" width="120" height="60" rx="10" fill="white" stroke="#4F46E5"
+                                    stroke-width="2" />
+                                <text x="300" y="320" text-anchor="middle" class="header-text">Individuals</text>
+                                <text x="300" y="340" text-anchor="middle" class="stats-text">Professionals</text>
+
+                                <!-- Connecting Lines -->
+                                <path class="dotted-line" d="M175 150 L235 180" stroke="#4F46E5" stroke-width="1.5"
+                                    fill="none" />
+                                <path class="dotted-line" d="M365 180 L425 150" stroke="#4F46E5" stroke-width="1.5"
+                                    fill="none" />
+                                <path class="dotted-line" d="M175 300 L235 230" stroke="#4F46E5" stroke-width="1.5"
+                                    fill="none" />
+                                <path class="dotted-line" d="M365 230 L425 300" stroke="#4F46E5" stroke-width="1.5"
+                                    fill="none" />
+                            </svg>
+                        </div>
+                        <!-- Floating stats card -->
+                        <div class="absolute -bottom-8 -right-8 bg-white p-6 rounded-xl shadow-xl">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600">Trusted by</p>
+                                    <p class="font-bold text-gray-900">500+ Businesses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center" data-aos="fade-up">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-trophy text-blue-600 text-2xl"></i>
+                    </div>
+                    <div class="text-3xl font-bold text-gray-900 mb-2">5+</div>
+                    <div class="text-gray-600">Years Experience</div>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-indigo-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-users text-indigo-600 text-2xl"></i>
+                    </div>
+                    <div class="text-3xl font-bold text-gray-900 mb-2">500+</div>
+                    <div class="text-gray-600">Happy Clients</div>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-file-alt text-blue-600 text-2xl"></i>
+                    </div>
+                    <div class="text-3xl font-bold text-gray-900 mb-2">1000+</div>
+                    <div class="text-gray-600">Projects Completed</div>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-indigo-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-clock text-indigo-600 text-2xl"></i>
+                    </div>
+                    <div class="text-3xl font-bold text-gray-900 mb-2">24/7</div>
+                    <div class="text-gray-600">Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 relative overflow-hidden">
+        <div class="blob bg-blue-50/50 w-96 h-96 -bottom-48 -right-48"></div>
+        <div class="container mx-auto px-6 relative">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4" data-aos="fade-up">Our Services</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Comprehensive financial solutions tailored to your needs
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-calculator text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Taxation Services</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            Income Tax Returns
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            GST Filing
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            Tax Planning
+                        </li>
+                    </ul>
+                    <button class="mt-6 text-blue-600 font-medium hover:text-blue-700 transition-colors">
+                        Learn More →
+                    </button>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Auditing</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            Statutory Audit
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            Internal Audit
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            Compliance Audit
+                        </li>
+                    </ul>
+                    <button class="mt-6 text-blue-600 font-medium hover:text-blue-700 transition-colors">
+                        Learn More →
+                    </button>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-book text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Advisory Services</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            Business Consulting
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            Financial Planning
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            Risk Assessment
+                        </li>
+                    </ul>
+                    <button class="mt-6 text-blue-600 font-medium hover:text-blue-700 transition-colors">
+                        Learn More →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-20 bg-gradient-to-br from-gray-50 to-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4" data-aos="fade-up">Why Choose Us?</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Experience excellence in financial services
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6" data-aos="fade-up">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Expert Team</h3>
+                    <p class="text-gray-600">Qualified professionals with years of experience in various domains.</p>
+                </div>
+                <div class="p-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-bolt text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Fast Turnaround</h3>
+                    <p class="text-gray-600">Quick response times and efficient service delivery.</p>
+                </div>
+                <div class="p-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-comments text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">24/7 Support</h3>
+                    <p class="text-gray-600">Always available to assist you with your queries and concerns.</p>
+                </div>
+                <div class="p-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-wallet text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Affordable Pricing</h3>
+                    <p class="text-gray-600">Competitive rates without compromising on quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 bg-white relative overflow-hidden">
+        <div class="blob bg-indigo-50/50 w-96 h-96 -top-48 -left-48"></div>
+        <div class="container mx-auto px-6 relative">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4" data-aos="fade-up">How It Works</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Simple, transparent process to get started
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="relative" data-aos="fade-up">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                        <div
+                            class="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold">
+                            1</div>
+                        <h3 class="text-xl font-semibold mb-4 mt-4">Book Consultation</h3>
+                        <p class="text-gray-600">Schedule a free consultation with our experts to discuss your needs.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                        <div
+                            class="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold">
+                            2</div>
+                        <h3 class="text-xl font-semibold mb-4 mt-4">Get Solution</h3>
+                        <p class="text-gray-600">Receive a customized plan tailored to your specific requirements.</p>
+                    </div>
+                </div>
+                <div class="relative" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                        <div
+                            class="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold">
+                            3</div>
+                        <h3 class="text-xl font-semibold mb-4 mt-4">Implementation</h3>
+                        <p class="text-gray-600">We handle everything while keeping you informed at every step.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+        <div class="blob bg-blue-50/50 w-96 h-96 -bottom-48 -right-48"></div>
+        <div class="container mx-auto px-6 relative">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Let's Get Started</h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Ready to take your financial management to the next level? Contact us today.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Visit Us</h4>
+                                <p class="text-gray-600">
+                                    147/7, 2nd Floor, Rangarajapuram Main Rd,<br>
+                                    KG NTR Heritage, Viswanatha Puram,<br>
+                                    Kodambakkam, Chennai, Tamil Nadu 600024
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Call Us</h4>
+                                <p class="text-gray-600">081444 97222</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Email Us</h4>
+                                <p class="text-gray-600">contact@rnhcollp.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <div class="bg-white rounded-2xl shadow-xl p-8">
+                        <form class="space-y-6">
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Name</label>
+                                <input type="text"
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email"
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Phone</label>
+                                <input type="tel"
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Message</label>
+                                <textarea rows="4"
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"></textarea>
+                            </div>
+                            <button
+                                class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 rounded-lg hover:shadow-lg transition-all">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">R N H & CO LLP</h3>
+                    <p class="text-gray-400">
+                        Your trusted partner for comprehensive financial services and solutions.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a>
+                        </li>
+                        <li><a href="#why-us" class="text-gray-400 hover:text-white transition-colors">Why Us</a></li>
+                        <li><a href="#process" class="text-gray-400 hover:text-white transition-colors">Process</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Taxation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Auditing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Compliance</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Advisory</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">© 2024 R N H & CO LLP. All rights reserved.</p>
+                <p class="text-gray-400 mt-2">Formerly R D Rajasekaran & Associates</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
