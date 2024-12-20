@@ -43,6 +43,61 @@
                 transform: translateY(-20px);
             }
         }
+
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding-top: 5rem !important;
+                /* Reduced from 8rem */
+                padding-bottom: 3rem !important;
+                /* Reduced from 5rem */
+            }
+
+            .hero-heading {
+                font-size: 2.5rem !important;
+                /* Reduced from 3rem */
+                line-height: 1.2 !important;
+            }
+
+            .hero-text {
+                font-size: 1.125rem !important;
+                /* Reduced from 1.25rem */
+                margin-bottom: 1.5rem !important;
+                /* Reduced from 2rem */
+            }
+
+            .cta-buttons {
+                flex-direction: column !important;
+                gap: 1rem !important;
+            }
+
+            .cta-button {
+                width: 100% !important;
+                padding: 0.875rem 1.5rem !important;
+                /* Reduced padding */
+            }
+
+            .stats-section {
+                padding: 3rem 0 !important;
+                /* Reduced from 5rem */
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 1.5rem !important;
+                /* Reduced from 2rem */
+            }
+
+            .services-card {
+                padding: 1.5rem !important;
+                /* Reduced from 2rem */
+            }
+
+            .contact-form {
+                padding: 1.5rem !important;
+                /* Reduced from 2rem */
+            }
+        }
     </style>
 </head>
 
@@ -50,7 +105,7 @@
     <!-- Header -->
     <!-- Header -->
     <header class="fixed w-full z-50 bg-white">
-        <nav class="container mx-auto px-6 py-4">
+        <nav class="container mx-auto px-4 sm:px-6 py-3">
             <div class="flex justify-between items-center">
                 <div
                     class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
@@ -70,34 +125,34 @@
         </nav>
     </header>
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 relative overflow-hidden">
+    <section class="hero-section pt-20 sm:pt-32 pb-12 sm:pb-20 relative overflow-hidden">
         <!-- Decorative blobs -->
-        <div class="blob bg-blue-100/50 w-96 h-96 -top-48 -right-48"></div>
-        <div class="blob bg-indigo-100/50 w-64 h-64 top-32 -left-32"></div>
+        <div class="blob bg-blue-100/50 w-72 sm:w-96 h-72 sm:h-96 -top-48 -right-48"></div>
+        <div class="blob bg-indigo-100/50 w-48 sm:w-64 h-48 sm:h-64 top-32 -left-32"></div>
+
 
         <div class="container mx-auto px-6 relative">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 z-10" data-aos="fade-right">
-                    <div class="flex items-center mb-6 bg-indigo-50/50 w-fit px-4 py-2 rounded-full">
-                        <span class="text-blue-600 font-medium">4.8/5 Rating on Google</span>
-                        <div class="flex ml-2">
-                            ★★★★★
-                        </div>
+                    <div class="flex items-center mb-4 sm:mb-6 bg-indigo-50/50 w-fit px-3 sm:px-4 py-2 rounded-full">
+                        <span class="text-blue-600 font-medium text-sm sm:text-base">4.8/5 Rating on Google</span>
+                        <div class="flex ml-2">★★★★★</div>
+
                     </div>
-                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    <h1 class="hero-heading text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
                         Simplifying Your <span class="gradient-text">Financial Journey</span>
                     </h1>
-                    <p class="text-xl text-gray-600 mb-8">
+                    <p class="hero-text text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8">
                         Expert chartered accountancy services with modern solutions. Your trusted partner for taxation,
                         auditing, and compliance.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
+                    <div class="cta-buttons flex flex-col sm:flex-row gap-3 sm:gap-4">
                         <button
-                            class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full hover:shadow-lg transition-all">
+                            class="cta-button bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:shadow-lg transition-all">
                             Schedule Free Consultation
                         </button>
                         <button
-                            class="border-2 border-gray-200 px-8 py-4 rounded-full hover:border-blue-600 transition-all text-gray-700 hover:text-blue-600">
+                            class="cta-button border-2 border-gray-200 px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:border-blue-600 transition-all text-gray-700 hover:text-blue-600">
                             View Services
                         </button>
                     </div>
@@ -220,7 +275,7 @@
                             </svg>
                         </div>
                         <!-- Floating stats card -->
-                        <div class="absolute -bottom-8 -right-8 bg-white p-6 rounded-xl shadow-xl">
+                        <div class="hidden md:block absolute -bottom-8 -right-8 bg-white p-6 rounded-xl shadow-xl">
                             <div class="flex items-center gap-4">
                                 <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                                     <i class="fas fa-check text-blue-600"></i>
@@ -238,9 +293,9 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+    <section class="stats-section py-12 sm:py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="stats-grid grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8">
                 <div class="text-center" data-aos="fade-up">
                     <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
                         <i class="fas fa-trophy text-blue-600 text-2xl"></i>
@@ -274,12 +329,13 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 relative overflow-hidden">
-        <div class="blob bg-blue-50/50 w-96 h-96 -bottom-48 -right-48"></div>
-        <div class="container mx-auto px-6 relative">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4" data-aos="fade-up">Our Services</h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+    <section id="services" class="py-12 sm:py-20 relative overflow-hidden">
+        <div class="blob bg-blue-50/50 w-72 sm:w-96 h-72 sm:h-96 -bottom-48 -right-48"></div>
+        <div class="container mx-auto px-4 sm:px-6 relative">
+            <div class="text-center mb-10 sm:mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4" data-aos="fade-up">Our Services
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
                     Comprehensive financial solutions tailored to your needs
                 </p>
             </div>
